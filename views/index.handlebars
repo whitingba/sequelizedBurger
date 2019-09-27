@@ -1,0 +1,63 @@
+{{!-- //TODO: finish putting together the HTML and add style to style sheet --}}
+<div class="container">
+    <div class="row align-items-center">
+        <div class="col text1">EAT-</div>
+
+        <div class="col">
+
+            <img src="/assets/img/burger.jpg" alt="image of a burger" id="bigBurger" />
+
+        </div>
+        <div class="col-auto text2">DA-BURGER!</div>
+    </div>
+
+
+    <div class="row align-items-center">
+        <div class="col toEat">
+            <h2>Burgers to eat!</h2>
+            <ol>
+                {{#each burgers}}
+                {{#unless devoured}}
+                <li>
+                    <p><span class="label"></span> {{this.burger_name}}</p>
+                    <button data-id="{{this.id}}" class="devour">Devour burger</button>
+                </li>
+                {{/unless}}
+                {{/each}}
+            </ol>
+        </div>
+
+        <div class="col placeholder"></div>
+
+        <div class="col devoured">
+            <h2>Devoured Burgers!</h2>
+            <ol>
+                {{#each burgers}}
+                {{#if devoured}}
+                <li>
+                    <p><span class="label"></span> {{this.burger_name}}</p>
+                </li>
+                {{/if}}
+                {{/each}}
+            </ol>
+        </div>
+    </div>
+    <div class="row"></div>
+
+    <div class="row justify-content-center">
+        <div class="col-8 text-center addBurger">
+            <h2>Add a Burger</h2>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-8 text-center">
+
+            <form id="newBurger" class="button-size">
+                {{!-- for textarea regarding user input set type to  text and set name attribute to string of movie --}}
+                <textarea type="text" name="burger_name"></textarea>
+                <button type="submit">Add Burger!</button>
+            </form>
+
+        </div>
+    </div>
+</div>

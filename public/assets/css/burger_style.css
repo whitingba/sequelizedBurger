@@ -1,0 +1,59 @@
+/* .container {
+    background-color: aqua;
+} */
+
+#bigBurger {
+    width: 250px;
+    height: auto;
+    
+}
+
+/* #subBurger {
+    margin: 10px 10px 10px 5px;
+  } */
+
+  /* button {
+      position: relative;
+      left: 37%;
+  }
+
+  input {
+    position: relative;
+    left: 37%;
+  } */
+
+.text1 {
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 70px;
+    text-align: center
+
+}
+
+.text2 {
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 70px;
+   
+}
+
+.toEat {
+    text-align: center;
+}
+
+.devoured {
+    text-align: center;
+}
+
+
+.devour {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+li {
+    border: 1px solid black;
+    color: blue;
+    font-size: 20px;
+}
+
