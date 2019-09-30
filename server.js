@@ -4,6 +4,9 @@ var app = express();
 
 var PORT = process.env.PORT || 8060;
 
+//Require models for syncing
+var db = require('./models');
+
 app.use(express.static('public'));
 
 
